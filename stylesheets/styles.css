@@ -2,10 +2,11 @@
 
 body {
   padding:0px;
-  font:14px/1.6 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px/1.6 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#4d4e50;
-  font-weight:300;
-  background-color: #f9f9fa;
+  font-weight:normal;
+  background-color: #295182;
+  margin: 0;
 }
 
 
@@ -24,13 +25,14 @@ h1 {
 h2 {
   color:#393939;
 }
+
 h3{
   color:#245596;
   font-weight: normal;
   font-size:28px;
 }
 
-  h4, h5, h6 {
+h4, h5, h6 {
   color:#73757a;
   font-size:14px;
   font-weight: normal;
@@ -39,21 +41,34 @@ h3{
 }
 
 a {
-  color:#39c;
+  color:#78a5d3;
   font-weight:400;
   text-decoration:none;
 }
 
 a small {
   font-size:11px;
-  color:#777;
+  color:#78a5d3;
   margin-top:-0.6em;
   display:block;
 }
 
+#about li.about a,
+#faculty li.faculty a,
+#classes li.classes a,
+#gallery li.gallery a,
+#calendar li.calendar a,
+#contact li.contact a{
+color: #fff;
+}
+
+
 .wrapper {
-  width:960px;
+  width:990px;
   margin:0 auto;
+  margin-top: 20px;
+  background-color: #f9f9fa;
+  box-shadow: 0px 0px 9px #1c3a5f;
 }
 
 blockquote {
@@ -101,50 +116,40 @@ img {
   max-width:100%;
 }
 
-header {
-  background: url('../img/sprite.png') 0 0 no-repeat #174c92;
-}
+.header {
+background: #1853a2;
+height: 156px;
 
-header ul {
+}
+.header h1 a{
+margin:0;
+display: block;
+padding:0;
+height: 97px;
+width: 635px;
+background: url('../img/sprite.png');
+text-indent: -9999px;
+	
+}
+.header ul {
   list-style:none;
-  height:40px;
-  
-
-}
-
-header li {
-  float:left;
-  border-right:1px solid #d2d2d2;t
-  height:40px;
-}
-
-header ul a {
-  line-height:1;
-  font-size:13px;
-  color:#6c95c7;
-  display:block;
-  text-align:center;
-  padding-top:6px;
   height:20px;
+  margin-left: 270px;
+  padding-top:8px;
 }
 
-strong {
-  color:#222;
-  font-weight:700;
+.header li {
+  float:left;
+  padding: 0 18px;
 }
 
-header ul li + li {
-  width:88px;
-}
-
-
-header ul a strong {
-  font-size:14px;
+.header ul a {
+  font-size:12px;
+  text-transform:uppercase;
+  color:#78a5d3;
   display:block;
-  color:#222;
+  letter-spacing:.15em
 }
-
-
 
 .section {
 width:960px;
@@ -233,11 +238,11 @@ footer {
     word-wrap:break-word;
   }
   
-  header {
+  .header {
     padding:0;
   }
   
-  header ul, header p.view {
+  .header ul, header p.view {
     position:static;
   }
   
@@ -251,7 +256,7 @@ footer {
     padding:15px;
   }
   
-  header ul {
+  .header ul {
     display:none;
   }
 }

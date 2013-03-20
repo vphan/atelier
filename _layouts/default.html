@@ -11,26 +11,24 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   </head>
-  <body>
-    
-      <header>
-        <h1>Atelier School of Classical Realism</h1>
-        <p></p>
-
-        <p class="view"><a href="https://github.com/vphan/atelier">View the Project on GitHub <small>vphan/atelier</small></a></p>
+  <body id="{{page.bodyClassName}}">
+    <div class="wrapper">
+      <div class="header">
+	      
+	    <h1><a href="{{ site.baseurl }}/index.html">Atelier School of Classical Realism</a></h1>
 
 
         <ul>
-          <li><a href="{{ site.baseurl }}/index.html">About</strong></a></li>
-          <li><a href="{{ site.baseurl }}/faculty.html">Faculty</strong></a></li>
-          <li><a href="{{ site.baseurl }}/gallery.html">Gallery</a></li>
-          <li><a href="{{ site.baseurl }}/classes.html">Classes</a></li>
-          <li><a href="{{ site.baseurl }}/calendar.html">calendar</a></li>
-           <li><a href="{{ site.baseurl }}/contact.html">Contact</a></li>
+          <li class="about"><a href="{{ site.baseurl }}/index.html">Home</strong></a></li>
+          <li class="classes"><a href="{{ site.baseurl }}/classes.html">Classes</a></li>
+          <li class="calendar"><a href="{{ site.baseurl }}/calendar.html">calendar</a></li>
+          <li class="gallery"><a href="{{ site.baseurl }}/gallery.html">Gallery</a></li>
+          <li class="faculty"><a href="{{ site.baseurl }}/faculty.html">Faculty</strong></a></li>
+           <li class="contact"><a href="{{ site.baseurl }}/contact.html">Contact</a></li>
         </ul>
-      </header>
+      </div>
     
-<div class="wrapper">
+
 	{{ content }}
 
 	</body>
