@@ -7,10 +7,6 @@ body {
   font-weight:300;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color:#245596;
-  margin:0 0 20px;
-}
 
 p, ul, ol, table, pre, dl {
   margin:0 0 20px;
@@ -27,9 +23,18 @@ h1 {
 h2 {
   color:#393939;
 }
-
-h3, h4, h5, h6 {
+h3{
   color:#245596;
+  font-weight: normal;
+  font-size:26px;
+  margin: 30px opx;
+}
+
+  h4, h5, h6 {
+  color:#73757a;
+  font-size:14px;
+  font-weight: normal;
+  text-transform:uppercase;
 }
 
 a {
@@ -97,7 +102,7 @@ img {
 
 header {
   background-color: #174c92;
-  background-image: url(img/sprite.png);
+  background-image: url('img/sprite.png') 0 0 no-repeat;
 }
 
 header ul {
@@ -139,9 +144,20 @@ header ul a strong {
   color:#222;
 }
 
-section {
+bio {
+display: block;
+border: #dd6969 solid 1px;
+width: 222px;}
+
+sectionleft {
+  width:250px;
+  margin-left: 20px;
+}
+
+sectionright {
   width:500px;
-  float:right;
+  float:left;
+  margin-left: 300px;
   padding-bottom:50px;
 }
 
