@@ -32,15 +32,6 @@ h3, h4, h5, h6 {
   color:#245596;
 }
 
-#about header ul a.about,
-#faculty header li a.faculty,
-#classes header li a.classes,
-#gallery header li a.gallery,
-#calendar header li a.calendar,
-#contact header li a.contact{
-color: #fff;
-}
-
 a {
   color:#39c;
   font-weight:400;
