@@ -16,7 +16,7 @@ p, ul, ol, table, pre, dl {
 h1, h2, h3 {
   line-height:1.3;
   margin:0;
-  margin-bottom: 20px;
+  
 }
 
 h1 {
@@ -32,6 +32,7 @@ h3{
   color:#245596;
   font-weight: normal;
   font-size:28px;
+  margin: 20px 0px 20px 0px;
   
 }
 
@@ -44,7 +45,7 @@ h4, h5, h6 {
 }
 
 a {
-  color:#78a5d3;
+  color:#3675c9;
   text-decoration:none;
 }
 
@@ -68,8 +69,8 @@ ul#davidhardy li.davidhardy a,
 ul#dianaboegel li.dianaboegel a,
 ul#brianlei li.brianlei a,
 #studentwork span.studentwork a{
-	background: #ebebee;
-	color: #245596;
+	background: #3675c9;
+	color: #fff;
 }
 
 
@@ -106,11 +107,10 @@ pre {
 
 img {
   max-width:100%;
-  padding-bottom:40px;
 }
 
 .header {
-background: #1853a2;
+background: #184c92;
 height: 156px;
 
 }
@@ -127,8 +127,8 @@ text-indent: -9999px;
 .header ul {
   list-style:none;
   height:20px;
-  margin-left: 226px;
-  padding-top:12px;
+  margin-left: 271px;
+  padding-top:28px;
 }
 
 .header li {
@@ -144,9 +144,12 @@ text-indent: -9999px;
   letter-spacing:.15em
 }
 
-
+.subnav{
+	margin: 50px 0 0 40px;
+	}
 .subnav ul {
   list-style:none;
+  text-indent: -12px;
 }
 
 .subnav ul a, .subnav span a {
@@ -155,6 +158,7 @@ text-indent: -9999px;
   font-weight: 400;
   color:#4d4e50;
   letter-spacing:.15em;
+  line-height: 26px;
 }
 .subnav ul a:hover, .subnav span a:hover {
   background:#d1def0;
@@ -170,10 +174,12 @@ margin-bottom: 30px;
 
 .col{
 float: left;
-margin: 40px 0 0 40px;
 width: 200px;
-margin-left: 40px;
 overflow: hidden;
+}
+.gutter{
+margin-left:40px;
+	}
 }
 .span1{
 width: 200px;
@@ -183,15 +189,18 @@ width: 200px;
 width: 400px;
 	
 }
+
 .span3{
 width: 600px;
+margin: 40px 0 0 20px;
+margin-top:26px;
 	
 }
 .span4{
 width: 800px;
 	
 }
-
+.span1 img{ width: 170px; margin: 30px 20px 0px 0px;}
 
 hr {
   border:0;
