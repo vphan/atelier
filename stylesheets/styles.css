@@ -232,7 +232,7 @@ footer {
   bottom:50px;
 }
 
-@media print, screen and (max-width: 960px) {
+@media print, screen and (max-width: 980px) {
   
   div.wrapper {
     width:auto;
@@ -290,10 +290,7 @@ footer {
     padding:15px;
   }
   
-  .header ul {
-    display:none;
-  }
-}
+
 
 @media print {
   body {
