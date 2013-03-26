@@ -174,12 +174,12 @@ margin-bottom: 30px;
 
 .col{
 float: left;
-width: 200px;
+margin: 40px 0 0 40px;
+width: 265px;
 overflow: hidden;
+
 }
-.gutter{
-margin-left:40px;
-	}
+
 }
 .span1{
 width: 200px;
