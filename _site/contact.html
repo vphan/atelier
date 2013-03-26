@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/atelier/stylesheets/fancybox.css">
     <link rel="stylesheet" href="/atelier/stylesheets/styles.css">
     <link rel="stylesheet" href="/atelier/stylesheets/pygment_trac.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="/atelier/javascripts/fancybox.min.js"></script> 
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/atelier/javascripts/fancybox.min.js"></script> 
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -32,7 +32,8 @@
       </div>
     
 
-	<p><img src="http://localhost:4000/atelier/img/map.png" no repeat></p>
+	<div style="width:400px;height:500px" id="map-canvas"></div>
+
 <p>The Atelier School of Classical Realism
 <br>4920 Telegraph Avenue
 <br>Oakland, CA 94609</p>
@@ -40,6 +41,33 @@
 
 <p>Phone: 510-465-1958 or 510-407-1336</p>
 <p>Email for David Hardy: dnshardy@yahoo.com</p>
+
+
+<script type="text/javascript">
+
+	function initialize() {
+		var mapOptions = {
+			zoom: 16,
+			center: new google.maps.LatLng(37.836194, -122.26219900000001),
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		}
+		var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+		var marker = new google.maps.Marker({
+			map: map,
+			position: new google.maps.LatLng(37.836194, -122.26219900000001)
+			});
+	}
+
+	function loadScript() {
+		var script = document.createElement("script");
+		script.type = "text/javascript";
+		script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyDZR_W5XEr_DMllwoA6ooB_Uvak3HsYBsE&sensor=false&callback=initialize";
+		document.body.appendChild(script);
+	}
+
+	window.onload = loadScript;
+
+</script>
 
 
 
