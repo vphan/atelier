@@ -4,7 +4,7 @@ body {
   padding:0px;
   font: 15px/1.6 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#565656;
-  background-color: #295182;
+  background-color: #2c4867;
   margin: 0;
 }
 
@@ -25,14 +25,18 @@ h1 {
 }
 
 h2 {
-  color:#393939;
+  color:#245596;
+  font-weight: normal;
+  font-size:28px;
+  line-height:.9;
+  padding-bottom: 30px;
 }
 
 h3{
   color:#245596;
   font-weight: normal;
   font-size:28px;
-  margin: 20px 0px 20px 0px;
+  line-height:.9;
   
 }
 
@@ -62,7 +66,7 @@ a small {
 #gallery li.gallery a,
 #calendar li.calendar a,
 #contact li.contact a{
-color: #fff;
+color: #78a5d3;
 }
 
 ul#davidhardy li.davidhardy a,
@@ -75,35 +79,21 @@ ul#brianlei li.brianlei a,
 
 
 .wrapper {
-  width:990px;
-  margin:0 auto;
-  margin-top: 20px;
+  width:1000px;
+  margin:20px auto;
+  padding-bottom:200px;
   background-color: #f9f9fa;
   box-shadow: 0px 0px 9px #1c3a5f;
   overflow: hidden;
+  
 }
+.section {
+  margin-top: 60px;
+  float: left;
+  overflow: hidden;
 
-blockquote {
-  border-left:1px solid #e5e5e5;
-  margin:0;
-  padding:0 0 0 20px;
-  font-style:italic;
+  
 }
-
-code, pre {
-  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-  color:#333;
-  font-size:12px;
-}
-
-pre {
-  padding:8px 15px;
-  background: #f8f8f8;  
-  border-radius:5px;
-  border:1px solid #e5e5e5;
-  overflow-x: auto;
-}
-
 
 img {
   max-width:100%;
@@ -112,6 +102,7 @@ img {
 .header {
 background: #184c92;
 height: 156px;
+margin-bottom:60px;
 
 }
 .header h1 a{
@@ -120,14 +111,14 @@ display: block;
 padding:0;
 height: 97px;
 width: 635px;
-background: url('../img/sprite.png');
+background: url('../img/ascr-logo.png') -48px 0;
 text-indent: -9999px;
 	
 }
 .header ul {
   list-style:none;
   height:20px;
-  margin-left: 271px;
+  margin-left: 224px;
   padding-top:28px;
 }
 
@@ -139,14 +130,15 @@ text-indent: -9999px;
 .header ul a {
   font-size:12px;
   text-transform:uppercase;
-  color:#78a5d3;
+  color:#fff;
   display:block;
   letter-spacing:.15em
 }
 
-.subnav{
-	margin: 50px 0 0 40px;
-	}
+.subnav{  
+  width:200px;	
+}
+
 .subnav ul {
   list-style:none;
   text-indent: -12px;
@@ -166,21 +158,13 @@ text-indent: -9999px;
 }
 
 
-.section {
-width:960px;
-overflow: hidden;
-margin-bottom: 30px;
-}
-
 .col{
 float: left;
-margin: 40px 0 0 40px;
-width: 265px;
+margin-left:40px;
 overflow: hidden;
 
 }
 
-}
 .span1{
 width: 200px;
 	
@@ -192,15 +176,22 @@ width: 400px;
 
 .span3{
 width: 600px;
-margin: 40px 0 0 20px;
-margin-top:26px;
 	
 }
 .span4{
 width: 800px;
 	
 }
-.span1 img{ width: 170px; margin: 30px 20px 0px 0px;}
+.gallery{
+	margin-left:20px;
+	width: 210px;
+	float: left;
+	overflow: hidden;
+}
+.gallery img, .col img{
+margin-bottom: 20px;
+	}
+}
 
 hr {
   border:0;
@@ -209,10 +200,10 @@ hr {
   margin:0 0 20px;
 }
 
-footer {
-  width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
+.footer {
+  padding:8px 15px;
+  background: #eef1f5;  
+  border-radius:5px;
+  border:1px solid #e5e5e5;
 }
 
