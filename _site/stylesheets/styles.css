@@ -28,8 +28,9 @@ h2 {
   color:#245596;
   font-weight: normal;
   font-size:28px;
-  line-height:.9;
+  line-height:.1.1;
   padding-bottom: 30px;
+  margin-top:-5px;
 }
 
 h3{
@@ -182,7 +183,7 @@ width: 600px;
 width: 800px;
 	
 }
-.gallery{
+.galcol{
 	margin-left:20px;
 	width: 210px;
 	float: left;
