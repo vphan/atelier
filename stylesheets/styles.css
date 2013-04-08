@@ -88,6 +88,11 @@ ul#brianlei li.brianlei a,
   overflow: hidden;
   
 }
+
+#calendar .wrapper {
+  background-color: #fff;
+}
+
 .section {
   margin-top: 60px;
   float: left;
